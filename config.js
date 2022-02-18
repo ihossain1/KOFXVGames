@@ -1,5 +1,5 @@
 module.exports = {
-	"port": 3000,
+	"port": 8888,
 	"matchData": "data/match.data",
 	"reportsFilename": "data/reports.data",
 	"logFilename": "data/log-DATE.data",
