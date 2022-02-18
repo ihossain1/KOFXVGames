@@ -35,6 +35,12 @@ module.exports = {
 			"html": "<p>He cropped the character renders for this site</p><a href='https://twitter.com/kreonekro'>@kreonekro</a>",
 			"img": "/img/someone.png",
 			"token": "kino"
+		},
+		{
+			"name": "Shib",
+			"html": "<a href='https://twitter.com/shiburizu>@shuburizu</a>,
+			"img": "/img/Shib.png",
+			"token": "2Um83JkvQkHaja4"
 		}
 	]
 };
