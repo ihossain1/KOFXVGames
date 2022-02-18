@@ -23,4 +23,4 @@ app.get("*", function(req, res){
 
 //Start listening on port
 let server = http.Server(app);
-server.listen(port, () => console.log(`Listening on: ${port}!`));
+server.listen(process.env.PORT, () => console.log(`Listening on: ${port}!`));
