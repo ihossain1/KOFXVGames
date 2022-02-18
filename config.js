@@ -38,7 +38,7 @@ module.exports = {
 		},
 		{
 			"name": "Shib",
-			"html": "<a href='https://twitter.com/shiburizu>@shuburizu</a>,
+			"html": "<a href='https://twitter.com/shiburizu>@shuburizu</a>",
 			"img": "/img/Shib.png",
 			"token": "2Um83JkvQkHaja4"
 		}
