@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+	<%=server.templateManager.renderTemplate("head.html", {
+		title: "KOFXV.Games: Characters page",
+		description: "Information and statistics for KOFXV characters."
+	})%>
+	<script src="js/characters.js"></script>
+	<script src="js/tableSort.js"></script>
+	<script src="js/chart.min.js"></script>
+	<body style="overflow-y: scroll;">
+		<%=server.templateManager.renderTemplate("menu.html")%>
+		<div class="container">
+			<div class="h5 ms-content ms-text-center py-4 shadow">
+				Select a character.
+			</div>
+		</div>
+		<div class="container char-select p-2">
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/andy.png" data-id="andy"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/angel.png" data-id="angel"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/antonov.png" data-id="antonov"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/ash.png" data-id="ash"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/athena.png" data-id="athena"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/benimaru.png" data-id="benimaru"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/blue_mary.png" data-id="blue_mary"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/chizuru.png" data-id="chizuru"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/chris.png" data-id="chris"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/clark.png" data-id="clark"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/dolores.png" data-id="dolores"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/elisabeth.png" data-id="elisabeth"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/heidern.png" data-id="heidern"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/iori.png" data-id="iori"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/isla.png" data-id="isla"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/joe.png" data-id="joe"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/k.png" data-id="k"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/king.png" data-id="king"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/king_of_dinosaurs.png" data-id="king_of_dinosaurs"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/krohnen.png" data-id="krohnen"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/kukri.png" data-id="kukri"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/kula.png" data-id="kula"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/kyo.png" data-id="kyo"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/leona.png" data-id="leona"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/luong.png" data-id="luong"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/mai.png" data-id="mai"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/maxima.png" data-id="maxima"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/meitenkun.png" data-id="meitenkun"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/ralf.png" data-id="ralf"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/ramon.png" data-id="ramon"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/robert.png" data-id="robert"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/ryo.png" data-id="ryo"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/shermie.png" data-id="shermie"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/shunei.png" data-id="shunei"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/terry.png" data-id="terry"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/vanessa.png" data-id="vanessa"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/whip.png" data-id="whip"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/yashiro.png" data-id="yashiro"></div>
+			<div class="char-img-wrap"><img class="char-img" src="/img/chars/yuri.png" data-id="yuri"></div>
+			
+		</div>
+		<img id="bg-img" class="bg-img" src="">
+		<div id="char-info-container" class="container char-info" hidden>
+			<div class="row">
+				<div class="col-sm shadow">
+					<h3><a id="char-wiki" href="" target="_blank">Wiki page</a></h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<table id="char-players" class="sort-table" data-sort="num,text,,num,num,num,num,num">
+						<thead>
+							<tr>
+								<th><a>Rank</a></th>
+								<th><a>Player</a></th>
+								<th class="d-none d-md-table-cell"></th>
+								<th><a>Games</a></th>
+								<th><a>Wins</a></th>
+								<th class="d-none d-sm-table-cell"><a>Losses</a></th>
+								<th class="d-none d-sm-table-cell"><a>Draws</a></th>
+								<th><a>Winrate</a></th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
