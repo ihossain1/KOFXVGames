@@ -68,7 +68,7 @@ module.exports = {
 	"elisabeth": {
 		"id": "elisabeth",
 		"name": "Elisabeth",
-		"full": "Elisabeth Blantorche",
+		"full": "Elisabeth Blanctorche",
 		"wiki": "https://dreamcancel.com/wiki/index.php/The_King_of_Fighters_XV/Elisabeth_Blanctorche"
 	},
 	"heidern": {
@@ -224,7 +224,7 @@ module.exports = {
 	"yashiro": {
 		"id": "yashiro",
 		"name": "Yashiro",
-		"full": "Yashiro Nanakasa",
+		"full": "Yashiro Nanakase",
 		"wiki": "https://dreamcancel.com/wiki/index.php/The_King_of_Fighters_XV/Yashiro_Nanakase"
 	},
 	"yuri": {
