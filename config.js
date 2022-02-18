@@ -8,13 +8,13 @@ module.exports = {
 	"contributors": [
 		{
 			"name": "Eika",
-			"html": "<p>I made this!</p><p>See me in melty!</p><a href='https://twitter.com/Eika_da'>@Eika_da</a>",
+			"html": "<p>They made the base for this site!</p><p>See them in melty!</p><a href='https://twitter.com/Eika_da'>@Eika_da</a>",
 			"img": "/img/eika.png",
-			"token": "eikaaa"
+			"token": "eikaaaIH8293651"
 		},
 		{
 			"name": "Trashman",
-			"html": "<p>I consume media</p><a href='https://twitter.com/GoddamnTrashman'>@GoddamnTrashman</a>",
+			"html": "<p>I don't even play KOF</p><a href='https://twitter.com/GoddamnTrashman'>@GoddamnTrashman</a>",
 			"img": "/img/Trashman.png",
 			"token": "Kinography"
 		},
@@ -29,6 +29,12 @@ module.exports = {
 			"img": "/img/someone.png",
 			"token": "hohoho",
 			"noApprove": true
+		}
+		{
+			"name": "Sakif",
+			"html": "<p>He cropped the character renders for this site</p><a href='https://twitter.com/kreonekro'>@kreonekro</a>",
+			"img": "/img/someone.png",
+			"token": "kino"
 		}
 	]
 };
