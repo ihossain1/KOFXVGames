@@ -29,7 +29,7 @@ module.exports = {
 			"img": "/img/someone.png",
 			"token": "hohoho",
 			"noApprove": true
-		}
+		},
 		{
 			"name": "Sakif",
 			"html": "<p>He cropped the character renders for this site</p><a href='https://twitter.com/kreonekro'>@kreonekro</a>",
